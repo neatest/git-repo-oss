@@ -1,0 +1,51 @@
+{
+  "project_slug": "project_name",
+  "github_repo_url": "twitter/{{ cookiecutter.project_slug }}",
+  "pull_request_url": "https://gitlab.com/olivr/repo-template/-/merge_requests/new",
+  "short_description": "A short description of the project to go in the readme",
+  "project_homepage": "none",
+  "documentation_homepage": "none",
+  "mailing_list": "opensource@twitter.com",
+
+
+  "author_full_name": "@RomainBarissat",
+  "author_email": "oss@olivr.com",
+  "release_year": 2020,
+  "project_name": "Olivr",
+  "vcs": [
+    "github",
+    "gitlab",
+    "bitbucket",
+    "gogs",
+    "gitea"
+  ],
+  "vcs_path": "olivr/repo-template",
+    "vcs_gitlab_url": "gitlab.com",
+    "vcs_bitbucket_url": "bitbucket.org",
+    "vcs_gogs_url": "",
+    "vcs_gitea_url": "",
+  "vcs_issue_folder": "",
+  "enable_security_snyk": true,
+  "enable_security_zap": true,
+  "license": [
+    "MIT",
+    "GNU GPLv3",
+    "Apache 2.0",
+    "Mozilla Public License 2.0",
+    "GNU LGPLv3",
+    "GNU AGPLv3"
+  ],
+  "ci": [
+    "GitHub Actions",
+    "GitLab CI",
+    "BitBucket CI",
+    "Travis",
+    "Circle CI",
+    "Semaphore CI"
+  ],
+
+  "folder_templates": "{% '.github' if cookiecutter.vcs == 'github' else '.gitlab' %}",
+  "folder_issue_template": "{% 'ISSUE_TEMPLATE' if cookiecutter.vcs == 'github' else 'issue_templates' %}",
+  "folder_pr_template": "{% 'PULL_REQUEST_TEMPLATE' if cookiecutter.vcs == 'github' else 'merge_request_templates' %}"
+
+}

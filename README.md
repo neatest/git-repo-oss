@@ -54,8 +54,7 @@ Create a [new issue](https://github.com/{{ cookiecutter.github_repo_url }}/issue
 
 ## Contributing
 
-We feel that a welcoming community is important and we ask that you follow Twitter's
-[Open Source Code of Conduct](https://github.com/twitter/code-of-conduct/blob/master/code-of-conduct.md)
+We feel that a welcoming community is important and we ask that you follow our [Code of Conduct](docs/CODE_OF_CONDUCT.md)
 in all interactions with the community.
 
 ## Authors
